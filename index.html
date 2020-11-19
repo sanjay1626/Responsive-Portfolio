@@ -2,29 +2,100 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Working with Bulma</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Responsive Portfolio</title>
       <!-- Bulma CDN Links -->
-      
+      <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.css">
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      <script src="~bulma-calendar/dist/js/bulma-calendar.min.js"></script>
       <!-- CSS Links -->
-        <!-- <link rel="stylesheet" href="./assests/debug.css">   -->
+        <link rel="stylesheet" href="./assests/debug.css">  
+         <link rel="stylesheet" href="./assests/helpers.css"> 
+         <link rel="stylesheet" href="./assests/grid.css"> 
         <style>
+            /* image is responsive window screen */
             .hero{
-                background-image: url(https://i2.wp.com/linabruyns.co.za/wp-content/uploads/2018/02/architectural-portfolio-background-13.jpg?fit=848%2C568&ssl=1)
-                    center / cover;
+                background: black url(https://pdgprinting.com/wp-content/uploads/2017/05/portfolio-background.jpg) center / cover;
             }
         </style>
     </head>
     <body>
-        <!-- Insert background images -->
+       
         <section class="hero is-fullheight">
-            <div class="hero-body">
+            <nav class="hero-head">
+                <div class="columns is-dark is-mobile is-marginless heading has-text-weight-bold">
+                    <div class="column left">
+                        <figure class="navbar-item image">
+                        <!-- <iframe src="http://free.timeanddate.com/clock/i7jxtixj/n770/szw110/szh110/hocddd/hbw0/hfc000/cf100/hgr0/fav0/fac333/fdi70/mqc222/mql15/mqw8/mqd100/mhc555/mhl15/mhw4/mhd100/hwm2/hhcbbb/hmc777/hsc900/hss3/hsw6" frameborder="0" width="110" height="110"></iframe> -->
+                        <!-- <img src="./assests/BioImage.jpg.JPG" > -->
+                        <p class="title has-text-white" >Sanjay Gonsalves</p>
+                        </figure>
+                    </div>
+
+                    <div class="column center desktop">
+                        <a class="navbar-item has-text-black">Portfolio</a>
+                        <a class="navbar-item has-text-black">Project1</a>
+                        <a class="navbar-item has-text-black">Project2</a>
+                        <a class="navbar-item has-text-black">Project3</a>
+                        <a class="navbar-item has-text-black">Project4</a>
+                    </div>
+
+                    <div class="column right" >
+                        <p class="navbar-item desktop1 has-text-black">Home</p>
+                        <p class="navbar-item desktop1 has-text-black">About Me</p>
+                        <p class="navbar-item desktop1 has-text-black">Contact</p>
+                        <figure class="navbar-item has-text-black center">
+                            <i class="fas fa-bars " style="width:1rem; height: 1rem"></i>
+                        </figure>
+                    </div>
+                </div>
                  
+            </nav>
+
+
+            <header class="hero-body">
+               <div class="is-overlay has-text-centered single-spaced" style="top: 37%">
+                <h1 class="title is-1 has-text-weight-light has-text-white">"Hello World"</h1>
+                <h2 class="subtitle is-4 has-text-white">A collective display of my work , gained during my journey to Web Development.</h2>
             </div>
+            </header>
+
+            <!-- Footer -->
+            <main class="hero-foot center  " style="padding: 2rem;">
+                <div id="grid" style="width: 768px;">
+
+                    <div id="a" class="center-column ">
+                        <p class="has-text-centered has-text-white single-spaced " style="margin-bottom: 1rem">
+                            “Live as if you were to die tomorrow. Learn as if you were to live forever.”<br>
+                            ― Mahatma Gandhi
+                        </p>
+                    </div>
+
+
+                    <div id="b" class="center-column ">
+                        <i class="icon fab fa-linkedin has-text-white-light" style="width: 3em; height: 3em"></i>
+                    </div>  
+
+                    <div id="c" class="center-column">
+                        <i class="fab fa-github has-text-white-light" style="width: 3em; height: 3em"></i>
+                    </div>
+
+                    <div id="d" class="center-column">
+                        <i class="fab fa-facebook has-text-white-light" style="width: 3em; height: 3em"></i>
+                    </div>
+                    <div id="e" class="center-column">
+                        <i class="fab fa-instagram has-text-white-light" style="width: 3em; height: 3em"></i>
+                    </div>
+
+                </div>
+
+            </main>
+
         </section>
-        <!-- Responsive and mobile  -->
+   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./assests/script.js"></script>
     </body>
 
 </html>
