@@ -1,0 +1,11 @@
+#navMenu{
+    display: none;
+    background-color: rgb(105, 99, 99);
+    opacity: 0.6;
+    
+   
+}
+
+.link{
+    margin-bottom: 24px;
+}

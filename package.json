@@ -1,0 +1,23 @@
+{
+  "name": "Responsive-Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjay1626/Responsive-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjay1626/Responsive-Portfolio/issues"
+  },
+  "homepage": "https://github.com/sanjay1626/Responsive-Portfolio#readme",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  }
+}
