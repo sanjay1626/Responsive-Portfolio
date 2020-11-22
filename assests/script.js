@@ -1,5 +1,5 @@
 //When i hover over hamburger it zoom out
-$(".burger").hover(
+$(".navbar-item").hover(
     function() {
         $(this).animate({ 'zoom': 1.2 }, 400);
     },
