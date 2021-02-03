@@ -2,11 +2,37 @@
 $(".navbar-item").hover(
     function() {
         $(this).animate({ 'zoom': 1.2 }, 400);
+        
     },
     function() {
         $(this).animate({ 'zoom': 1 }, 400);
     });
 
+    $("#project1").hover(
+        function() {
+            $(this).animate({ 'zoom': 1.2 }, 400);
+        },
+        function() {
+            $(this).animate({ 'zoom': 1 }, 400);
+        });
+
+        $("#project2").hover(
+            function() {
+                $(this).animate({ 'zoom': 1.2 }, 400);
+            },
+            function() {
+                $(this).animate({ 'zoom': 1 }, 400);
+            });
+
+            
+        $("#project3").hover(
+            function() {
+                $(this).animate({ 'zoom': 1.2 }, 400);
+            },
+            function() {
+                $(this).animate({ 'zoom': 1 }, 400);
+            });
+ 
 //When i click Hamburger icon would rotate
 $(function () {
     
@@ -24,7 +50,7 @@ $(function () {
        
        
     });
-
+  
 
 
 
@@ -51,6 +77,3 @@ $(function () {
 //When I Click my Name it willl rotate and display my email and phone
 
 //Research on toggle and trigger
-
-
-    

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sanjay1626/Responsive-Portfolio#readme",
   "dependencies": {
     "bulma": "^0.9.1",
+    "jcarousel": "^0.3.9",
     "request": "^2.88.2"
   }
 }

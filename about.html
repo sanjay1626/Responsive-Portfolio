@@ -11,11 +11,19 @@
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
       <!-- jQuery Link -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"></script>
+      <script type="text/javascript" src="./assests/jcarousel.responsive.js"></script>
       <!-- CSS Links -->
         <!-- <link rel="stylesheet" href="./assests/debug.css">    -->
          <link rel="stylesheet" href="./assests/helpers.css"> 
          <link rel="stylesheet" href="./assests/grid.css"> 
          <link rel="stylesheet" href="./assests/style.css">
+
+        <!-- JCarousel -->
+        <!-- Example assets -->
+        
+
+      
 
         <style>
             /* image is responsive window screen */
@@ -38,12 +46,14 @@
                         <figure class="navbar-item image">
                         <!-- <iframe src="http://free.timeanddate.com/clock/i7jxtixj/n770/szw110/szh110/hocddd/hbw0/hfc000/cf100/hgr0/fav0/fac333/fdi70/mqc222/mql15/mqw8/mqd100/mhc555/mhl15/mhw4/mhd100/hwm2/hhcbbb/hmc777/hsc900/hss3/hsw6" frameborder="0" width="110" height="110"></iframe> -->
                         <!-- <img src="./assests/BioImage.jpg.JPG" > -->
-                        <p class="title has-text-white" id="myName">Sanjay Gonsalves</p>
+                        <p class="title has-text-black" id="myName">Sanjay Gonsalves</p>
+                        
                         </figure>
+                        
                     </div>
                     
                     <div class="column center desktop">
-                        <a class="navbar-item has-text-black">Portfolio</a>
+                        <a href="./portfolio.html" class="navbar-item has-text-black">Portfolio</a>
                         <a class="navbar-item has-text-black">Project1</a>
                         <a class="navbar-item has-text-black">Project2</a>
                         <a class="navbar-item has-text-black">Project3</a>
@@ -53,7 +63,7 @@
                     <div class="column right" >
                         <a href="./index.html" class="navbar-item desktop1 has-text-black " style="margin-left:10rem">Home</a>
                         <p class="navbar-item desktop1 has-text-black">About Me</p>
-                        <p class="navbar-item desktop1 has-text-black">Contact</p>
+                        <a href="./contact.html" class="navbar-item desktop1 has-text-black " >Contact</a>
                        
                         <div class="navbar-burger burger has-text-black center" id="hamburger" data-target="navMenu">
                             <!-- <img class="fas fa-bars" data-target="navMenu" style="width:1rem; height: 1rem;cursor: pointer;"> -->
@@ -65,106 +75,32 @@
 
                     </div>                       
                 </div>
-                <div  class="column menu is-12 has-text-weight-bold" id="navMenu"> 
-                    <div class="navbar-start" id="navlist">
-                        <ul>
-                        <a href="#" class="navbar-item  is-active">Home</a>
-                        <a href="#" class="navbar-item">About</a> 
-                        <a href="#" class="navbar-item">Portfolio</a> 
-                        <a href="#" class="navbar-item">Education</a>
-                        </ul>
-                    </div> 
-            </div> 
+                <!-- <div  class="column menu is-12 has-text-weight-bold" id="navMenu">  -->
+                    <!-- <div class="navbar-start " id="navlist"> -->
+                        <!-- <ul> -->
+                        <!-- <a href="#" class="navbar-item  is-active ">Home</a> -->
+                        <!-- <a href="#" class="navbar-item">About</a>  -->
+                        <!-- <a href="#" class="navbar-item">Portfolio</a>  -->
+                        <!-- <a href="#" class="navbar-item">Education</a> -->
+                        <!-- </ul> -->
+                    <!-- </div>  -->
+            <!-- </div>  -->
             
             </nav>
+            <div class=" card-section  is-dark  center-column">
+                <p>email: snjgonsalves@gmail.com</p>
+                <p>Tel #: (619)-636-2857</p>
 
-
-<!--create one column with two card  -->
-            <div class="notification margin">
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Text input">
-                    </div>
-                  </div>
-                  
-                
-                  
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                      </span>
-                    </div>
-                    <p class="help is-danger">This email is invalid</p>
-                  </div>
-                  
-                  <div class="field">
-                    <label class="label">Subject</label>
-                    <div class="control">
-                      <div class="select">
-                        <select>
-                          <option>Select dropdown</option>
-                          <option>Questions</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                      <textarea class="textarea" placeholder="Textarea"></textarea>
-                    </div>
-                  </div>
-                  
-                  <div class="field">
-                    <div class="control">
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        I agree to the <a href="#">terms and conditions</a>
-                      </label>
-                    </div>
-                  </div>
-                  
-                  <div class="field">
-                    <div class="control">
-                      <label class="radio">
-                        <input type="radio" name="question">
-                        Yes
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="question">
-                        No
-                      </label>
-                    </div>
-                  </div>
-                  
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button class="button is-link">Submit</button>
-                    </div>
-                    <div class="control">
-                      <button class="button is-link is-light">Cancel</button>
-                    </div>
-                  </div>
-                
-
- </div>
-<!-- Project title -->
-<!-- Link to the deployed version -->
-<!-- Link to the GitHub repository -->
-<!-- Screenshot of the deployed application -->
+            </div>
+            
+            
+            
+    
 
 
 
-            <!-- Footer -->
-            <main class="hero-foot center  " style="padding: 2rem;">
+             <!-- Footer -->
+             <main class="hero-foot center  " style="padding: 2rem;">
                 <div id="grid" style="width: 768px;">
 
                     <div id="a" class="center-column ">
@@ -174,31 +110,44 @@
                         </p>
                     </div>
 
+                    <div id="b" class="center-column " >
+                        <!-- <a href="https://www.linkedin.com/in/sanjay-gonsalves-61a74b39/"><img src='./images/linkedin-resize.png' /></a> -->
+                        <a class="navbar-item " style="background-color:black; border-radius: 1rem;" href="https://www.linkedin.com/in/sanjay-gonsalves-61a74b39/" >
+                            <img class="icon fab fa-linkedin " style="width: 3em; height: 3em" alt="LinkedIn" width="50" height="28">
+                          </a>
+                        </div>  
 
-                    <div id="b" class="center-column ">
-                        <i class="icon fab fa-linkedin has-text-white-light" style="width: 3em; height: 3em"></i>
-                    </div>  
-
-                    <div id="c" class="center-column">
-                        <i class="fab fa-github has-text-white-light" style="width: 3em; height: 3em"></i>
-                    </div>
-
-                    <div id="d" class="center-column">
-                        <i class="fab fa-facebook has-text-white-light" style="width: 3em; height: 3em"></i>
-                    </div>
-                    <div id="e" class="center-column">
-                        <i class="fab fa-instagram has-text-white-light" style="width: 3em; height: 3em"></i>
-                    </div>
-
+                        <div id="c" class="center-column " >
+                            <!-- <a href="https://www.linkedin.com/in/sanjay-gonsalves-61a74b39/"><img src='./images/linkedin-resize.png' /></a> -->
+                            <a class="navbar-item " style="background-color:black; border-radius: 1rem;" href="https://github.com/sanjay1626" >
+                                <img class="icon fab fa-github has-text-white-light " style="width: 3em; height: 3em" alt="LinkedIn" width="50" height="28">
+                              </a>
+                            </div> 
+                   
+                            <div id="d" class="center-column " >
+                                <!-- <a href="https://www.linkedin.com/in/sanjay-gonsalves-61a74b39/"><img src='./images/linkedin-resize.png' /></a> -->
+                                <a class="navbar-item " style="background-color:black; border-radius: 1rem;" href="https://www.facebook.com/sanjay.gonsalves.96/" >
+                                    <img class="icon fab fa-facebook has-text-white-light " style="width: 3em; height: 3em" alt="LinkedIn" width="50" height="28">
+                                  </a>
+                                </div> 
+                                <div id="e" class="center-column " >
+                                    <!-- <a href="https://www.linkedin.com/in/sanjay-gonsalves-61a74b39/"><img src='./images/linkedin-resize.png' /></a> -->
+                                    <a class="navbar-item " style="background-color:black; border-radius: 1rem;" href="https://www.instagram.com/stormer_sj/" >
+                                        <img class="icon fab fa-instagram has-text-white-light " style="width: 3em; height: 3em" alt="LinkedIn" width="50" height="28">
+                                      </a>
+                                    </div> 
+                   
                 </div>
 
             </main>
-
         </section>
    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="./assests/script.js"></script>
         <script type="text/javascript" src="./assests/rotate.js"></script>
+
+        <script type="text/javascript" src="/path/to/jquery.js"></script>
+        <script type="text/javascript" src="/path/to/jquery.jcarousel.js"></script>
     </body>
 
 </html>
